@@ -167,7 +167,7 @@ Openssl on updated Ubuntu 18.04 (Openssl 1.1.1-1ubuntu2.1~18.04.5)
  512 bits ecdsa (brainpoolP512r1) | 0.0012s | 0.0010s |  817.2 | 1046.2
  512 bits ecdsa (brainpoolP512t1) | 0.0012s | 0.0009s |  833.9 | 1135.8
 
- # E5-2687W (3.1GHz)
+ # E5-2687Wv3 (3.1GHz)
 |                            | sign   | verify  |  sign/s | verify/s|
 |----------------------------|--------:|---------:|--------:|--------:|
  521 bits ecdsa (nistp521)  | 0.0004s  | 0.0010s  | 2388.9  |  975.9
