@@ -1,3 +1,6 @@
+All executions with `openssl speed ecdsa`, no multi xxx or other options.\
+Openssl on updated Ubuntu 18.04 (Openssl 1.1.1-1ubuntu2.1~18.04.5)
+
 # A1.large
 |                            | sign   | verify  |  sign/s | verify/s|
 |----------------------------|--------:|---------:|--------:|--------:|
@@ -103,7 +106,7 @@
  512 bits ecdsa (brainpoolP512t1) | 0.0014s | 0.0010s |  726.6 | 1014.6
  
  
-# i7-8550U (Fedora 31)
+# i7-8550U (Fedora 31, Openssl 1.1.1d)
 |                            | sign   | verify  |  sign/s | verify/s|
 |----------------------------|--------:|---------:|--------:|--------:|
 224 bits ecdsa (nistp224) | 0.0001s | 0.0001s | 19643.6 | 8538.7
@@ -163,3 +166,28 @@
  384 bits ecdsa (brainpoolP384t1) | 0.0008s | 0.0006s | 1203.3 | 1633.3
  512 bits ecdsa (brainpoolP512r1) | 0.0012s | 0.0010s |  817.2 | 1046.2
  512 bits ecdsa (brainpoolP512t1) | 0.0012s | 0.0009s |  833.9 | 1135.8
+
+ # E5-2687W (3.1GHz)
+|                            | sign   | verify  |  sign/s | verify/s|
+|----------------------------|--------:|---------:|--------:|--------:|
+ 521 bits ecdsa (nistp521)  | 0.0004s  | 0.0010s  | 2388.9  |  975.9
+
+ #  AMD EPYC 7401P (2GHz)
+ |                            | sign   | verify  |  sign/s | verify/s|
+|----------------------------|--------:|---------:|--------:|--------:|
+ 160 bit ecdsa (secp160r1) | 0.0004s | 0.0003s | 2621.7 | 3626.2
+ 192 bit ecdsa (nistp192) | 0.0004s | 0.0003s | 2240.2 | 3031.1
+ 224 bit ecdsa (nistp224) | 0.0001s | 0.0002s | 12009.5 | 5075.5
+ 256 bit ecdsa (nistp256) | 0.0000s | 0.0001s | 20062.4 | 7900.9
+ 384 bit ecdsa (nistp384) | 0.0016s | 0.0011s |  625.4 |  940.7
+ 521 bit ecdsa (nistp521) | 0.0004s | 0.0007s | 2229.1 | 1344.7
+ 163 bit ecdsa (nistk163) | 0.0019s | 0.0006s |  524.8 | 1736.3
+ 233 bit ecdsa (nistk233) | 0.0039s | 0.0008s |  258.2 | 1239.4
+ 283 bit ecdsa (nistk283) | 0.0061s | 0.0013s |  163.7 |  746.7
+ 409 bit ecdsa (nistk409) | 0.0138s | 0.0022s |   72.6 |  444.7
+ 571 bit ecdsa (nistk571) | 0.0299s | 0.0045s |   33.4 |  219.8
+ 163 bit ecdsa (nistb163) | 0.0019s | 0.0006s |  527.5 | 1665.7
+ 233 bit ecdsa (nistb233) | 0.0038s | 0.0008s |  266.3 | 1239.7
+ 283 bit ecdsa (nistb283) | 0.0059s | 0.0014s |  169.3 |  724.3
+ 409 bit ecdsa (nistb409) | 0.0136s | 0.0024s |   73.3 |  421.1
+ 571 bit ecdsa (nistb571) | 0.0299s | 0.0049s |   33.4 |  204.3
